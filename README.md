@@ -2,7 +2,7 @@
 An implementation of (Euclidean) Projective Geometric Algebra in Jai, including dual quaternions, homogeneous points and planes, plucker coordinates, and flectors
 
 # What is a Dual Quaternion? What is a Flector?
-These are the two basic data structures you use in this library.
+These are the two basic data structures you use in this library:
 
 A **Dual quaternion**(Dq) is 8 floats and can be any of these:
 -A translation (imagine a "vector" if you like)
@@ -17,6 +17,8 @@ A **Flector**(Fl) is also 8 floats and can be any of these:
 -A planar reflection (same thing as a plane, hun!), a point reflection (point!)
 -A rotoreflection or glide reflection (a plane added to a point - because a point reflection is a planar reflection followed by a 180 turn, and a rotoreflection is a lerp of a plane and a point)
 
+These are all the elements of the _Euclidean group_, eg they are all the _distance preserving_ transformations. They also have in common that they can be produced from composing some number of _planar reflections_. If the number is odd you get a flector, if the number is even you get a Dual Quaternion.
+
 # Why the hell would I want any of those?
 1. You want to solve the candy-wrapper effect with Dual Quaternion skinning https://www.youtube.com/watch?v=LUOJccOZfWQ and thereby let your artists tick the "preserve volume" box in blender/maya/autodesk/all fucking 3D animation software because it's fucking 2024 what the hell is wrong with everyone why do you hate animators
 2. You want to interpolate rotations and translations for individual objects and matrices don't do this properly
@@ -27,16 +29,16 @@ A **Flector**(Fl) is also 8 floats and can be any of these:
 
 # Where can I learn about Projective Geometric Algebra?
 If (like me) you like lectures:
-gdcvault.com/play/1029233/
-gdcvault.com/play/1029237/
-https://youtu.be/0i3ocLhbxJ4
-https://youtube.com/playlist?list=PLsSPBzvBkYjxrsTOr0KLDilkZaw7UE2Vc
+1. gdcvault.com/play/1029233/
+2. gdcvault.com/play/1029237/
+3. https://youtu.be/0i3ocLhbxJ4
+4. https://youtube.com/playlist?list=PLsSPBzvBkYjxrsTOr0KLDilkZaw7UE2Vc
 
 If you like reading:
-https://en.wikipedia.org/wiki/Plane-based_geometric_algebra#Projective_geometric_algebra (written by me)
-https://enkimute.github.io/LookMaNoMatrices/
-https://arxiv.org/abs/2002.04509
-https://bivector.net/PGADYN.html
+1. https://en.wikipedia.org/wiki/Plane-based_geometric_algebra#Projective_geometric_algebra (written by me)
+2. https://enkimute.github.io/LookMaNoMatrices/
+3. https://arxiv.org/abs/2002.04509
+4. https://bivector.net/PGADYN.html
 
 # How this was made
 https://www.twitch.tv/videos/2088938175
