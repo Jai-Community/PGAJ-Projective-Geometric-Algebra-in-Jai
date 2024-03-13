@@ -29,8 +29,8 @@ These are all the elements of the _Euclidean group_, eg they are all the _distan
 
 # Where can I learn about Projective Geometric Algebra?
 If (like me) you like lectures:
-1. gdcvault.com/play/1029233/
-2. gdcvault.com/play/1029237/
+1. https://gdcvault.com/play/1029233/
+2. https://gdcvault.com/play/1029237/
 3. https://youtu.be/0i3ocLhbxJ4
 4. https://youtube.com/playlist?list=PLsSPBzvBkYjxrsTOr0KLDilkZaw7UE2Vc
 
