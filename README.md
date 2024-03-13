@@ -5,17 +5,17 @@ An implementation of (Euclidean) Projective Geometric Algebra in Jai, including 
 These are the two basic data structures you use in this library:
 
 A **Dual quaternion**(Dq) is 8 floats and can be any of these:
--A translation (imagine a "vector" if you like)
--A rotation (imagine a quaternion if you like, though bear in mind quats are only rotations around lines through the origin
--A screw motion (rotation around an axis followed by translation along it)
--A line in "Plucker coordinates". This is the special case of a rotation where the rotation is by 180 degrees
+1. A translation (imagine a "vector" if you like)
+2. A rotation (imagine a quaternion if you like, though bear in mind quats are only rotations around lines through the origin
+3. A screw motion (rotation around an axis followed by translation along it)
+4. A line in "Plucker coordinates". This is the special case of a rotation where the rotation is by 180 degrees
 
 A **Flector**(Fl) is also 8 floats and can be any of these:
--A plane (in homogeneous coordinates, eg essentially normal-and-distance-from-origin)
--A point/vertex (also in homogeneous coordinates, eg xyz and w=1)
--A "normal"/"direction", aka a point-at-infinity (again homogeneous coordinates; w=0)
--A planar reflection (same thing as a plane, hun!), a point reflection (point!)
--A rotoreflection or glide reflection (a plane added to a point - because a point reflection is a planar reflection followed by a 180 turn, and a rotoreflection is a lerp of a plane and a point)
+1. A plane (in homogeneous coordinates, eg essentially normal-and-distance-from-origin)
+2. A point/vertex (also in homogeneous coordinates, eg xyz and w=1)
+3. A "normal"/"direction", aka a point-at-infinity (again homogeneous coordinates; w=0)
+4. A planar reflection (same thing as a plane, hun!), a point reflection (point!)
+5. A rotoreflection or glide reflection (a plane added to a point - because a point reflection is a planar reflection followed by a 180 turn, and a rotoreflection is a lerp of a plane and a point)
 
 These are all the elements of the _Euclidean group_, eg they are all the _distance preserving_ transformations. They also have in common that they can be produced from composing some number of _planar reflections_. If the number is odd you get a flector, if the number is even you get a Dual Quaternion.
 
