@@ -10,12 +10,16 @@ A **Dual quaternion**(Dq) is 8 floats and can be any of these:
 3. A screw motion (rotation around an axis followed by translation along it)
 4. A line in "Plucker coordinates". This is the special case of a rotation where the rotation is by 180 degrees
 
+So another way to describe a dual quat is a _handedness-preserving transformation_; the kind you could make by moving an object with your hand
+
 A **Flector**(Fl) is also 8 floats and can be any of these:
 1. A plane (in homogeneous coordinates, eg essentially normal-and-distance-from-origin)
 2. A point/vertex (also in homogeneous coordinates, eg xyz and w=1)
 3. A "normal"/"direction", aka a point-at-infinity (again homogeneous coordinates; w=0)
 4. A planar reflection (same thing as a plane, hun!), a point reflection (point!)
 5. A rotoreflection or glide reflection (a plane added to a point - because a point reflection is a planar reflection followed by a 180 turn, and a rotoreflection is a lerp of a plane and a point)
+
+So another way to describe a flector is a _handedness-**reversing** transformation_; the kind that relates your left hand to your right hand.
 
 These are all the elements of the _Euclidean group_, eg they are all the _distance preserving_ transformations. They also have in common that they can be produced from composing some number of _planar reflections_. If the number is odd you get a flector, if the number is even you get a Dual Quaternion.
 
