@@ -25,7 +25,7 @@ These are all the elements of the _Euclidean group_, eg they are all the _distan
 3. You want to transform vertices _and_ lines _and_ planes with a single formula (sandwich product)
 4. Because you have a plane and a line and you want their intersection _and_ their angle/distance and the projection of one onto the other from 3 lines of code
 5. The same as above but for a point and a line, or for a line and a line, or two planes, or a plane and a point
-6. You want to understand the math of quaternions properly, instead of being one of the people whose hands shake when it's time to interact with them, or one of those (even worse) people who watch the useless 3blue1brown video, learn nothing of use, and end up saying to their colleagues "quaternions are four dimensional" (basically a false statement, no truer than "rotation matrices are 9-dimensional")
+6. You want a proper understanding of quaternions and homogeneous points, instead of being one of the people who feel the fear of god when it's time to interact with them. Or one of those (even worse) people who watch the useless 3blue1brown video and end up saying to their colleagues "quaternions are four dimensional" (basically a false statement, no truer than "rotation matrices are 9-dimensional").
 
 # Where can I learn about Projective Geometric Algebra?
 If (like me) you like lectures:
@@ -40,5 +40,5 @@ If you like reading:
 3. https://arxiv.org/abs/2002.04509
 4. https://bivector.net/PGADYN.html
 
-# How this was made
+# Twitch stream of me writing this library
 https://www.twitch.tv/videos/2088938175
